@@ -1,0 +1,398 @@
+@import url('https://fonts.googleapis.com/css?family=poppins:300,400,500,600,700,900&display=swap');
+
+*{
+    padding: 0px;
+    margin: 0px;
+    text-decoration: none;
+ }
+
+ /*home page starts here*/
+
+ .bottom{
+     position: fixed;
+     bottom: 0;
+     width: 100%;
+     height: 5.1rem;
+     background-color: rgba(0,0,0,.1);
+     
+     text-align: center;
+ }
+ .txtbottom{
+     padding-top: 20px;
+     color: rgb(255, 255, 255, 0.7);
+     font-style: oblique;
+     font-size: 25px;
+ }
+ header{
+  top: 0;
+  background: #000;
+  position: sticky;
+  left: 0;
+  right: 0;
+  border-bottom: 1px solid #423940;
+  padding: 0px 15px;
+  z-index: 10;
+}
+
+header .row{
+  justify-content: space-between;
+  align-items: center;
+}
+
+header .brand-name a{
+ text-decoration: none;
+ font-size: 25px;
+ font-weight: 700;
+ color: #ffffff;
+ text-transform: uppercase;
+ position: relative;
+}
+
+header .brand-name a::before{
+  content: '';
+  height: 3px;
+  background-color: #ff5722;
+  width: 100%;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+}
+
+header .navbar ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+header .navbar ul li{
+  display: inline-block;
+  margin-left: 35px;
+}
+
+header .navbar ul li a{
+  font-size: 15px;
+  text-decoration: none;
+  line-height: 75px;
+  color: #ffffff;
+  display: block;
+  position: relative;
+}
+
+header .fixed .navbar ul li a{
+  color: #000000;
+}
+
+header .navbar ul li a::before{
+  content: '';
+  height: 3px;
+  background-color: #ffffff;
+  width: 0%;
+  position: absolute;
+  right: 0;
+  bottom: -1px;
+  transition: all .5s ease;
+}
+
+header .navbar ul li a:hover::before{
+  width: 100%;
+  left: 0;
+}
+
+header .navbar ul li a.active::before{
+  width: 100%;
+  left: 0;
+}
+ .mainbg{
+     
+     background-size: 50% ;
+ 
+ }
+ 
+ .photo{
+   background-color: #1f1f1f;
+   overflow: hidden;
+   border-radius: 0px;
+   box-shadow: 2px 2px 13px rgba(0,0,0,0.3);
+   position: relative;
+ }
+ .photo img{
+   width: 100%;
+ }
+ .musicam{
+   width: 90%;
+   height: 100vh;
+    display: grid;
+    grid-template-rows: auto ;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 10px;
+    margin-left: 50px;
+    margin-right: 50px;
+}
+.photo1{
+  font-family: calibri;
+  position: absolute;
+  left: 0;
+  right: 0;
+  width: 100%;
+  height: 180%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  
+  
+}
+.photo1 a{
+  color: #fff;
+  background-color: rgba(73, 73, 73, 0.89);
+}
+.photo1 a{
+  font-size: 2.2rem;
+  margin:0px;
+  padding: 0px;
+  letter-spacing: 2px;
+}
+.photo:hover .photo1{
+  display: flex;
+}
+.photo img{
+  height: 100%;
+  max-width: 100%;
+  object-fit: cover;
+}
+
+ 
+ 
+ /*home page ends here*/
+ 
+ body{
+     display: flex;
+     background-image: url("./background.jpg");
+     background-size: 100%;
+     position: relative;
+     
+ }
+ 
+ .navformusic{
+     width: 1250px;
+    /* background-color: #882;*/
+    background-color: rgba(255, 255, 255, 0.6);
+     font-size: 1.4rem;
+     padding-left: 35px;
+     padding-top: 70px;
+     margin-left: 30px;
+ }
+ 
+ .navmusicmargin{
+     margin-top: 4.4rem;
+ }
+ 
+ .txtnavmusic{
+     
+     color: #fff;
+     transition: opacity 0.2s;
+     transition: all 0.2s;
+     border-bottom: 2px solid rgba(222,255,255,0.1);
+ }
+ 
+ .txtnavmusic:hover{
+     opacity: .4;
+     color: black;
+     
+ }
+ .musicpad{
+     margin: 10px 10px;
+ }
+ 
+ .musiccontenttxt{
+     margin-top: 3rem;
+ }
+ 
+ .musiccontent{
+     padding-left: 14px;
+     padding-right: 14px;
+     
+     font-size: 1.2rem;
+     text-align: justify;
+     padding-top: 50px;
+     background-color: rgba(255,255,255,0.9);
+     border-radius: 7px;
+ }
+ 
+ 
+ .half{
+     padding-left: 14px;
+     padding-right: 14px;
+     font-size: 1.2rem;
+     text-align: justify;
+     padding-top: 50px;
+     margin-top: 10px;
+     background-color: rgba(255,255,255,0.9);
+     border-radius: 7px;
+     
+ }
+ 
+ .musicspace{
+     width: 1000px;
+ }
+ 
+ /*music production ends*/
+ 
+ /*contact us starts here*/
+ body{
+  display: flex;
+  background-image: url("./background.jpg");
+  background-repeat: no-repeat;
+  background-size: 100%;
+  position: relative;
+  
+}
+ 
+ .contactus{
+     text-align: center;
+     margin-left: 40%;
+     margin-top: 8rem;
+     margin-right: 50%;
+     color:white;
+     font-size: 2rem;
+     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+     font-weight: 100;
+ 
+ }
+ 
+ .logoforsharma img{
+     transition: transform 1.2s;
+ }
+ 
+ .logoforsharma img:hover {
+     transform: scale(1.5);
+ }
+ 
+ 
+ .logoformathur img{
+     transition: transform 1.2s;
+ }
+ 
+ .logoformathur img:hover {
+     transform: scale(1.5);
+ }
+ 
+ 
+ 
+ /*contact us ends here*/
+ 
+ 
+ /*about is ends here*/
+ 
+ /*ask us starts here*/
+ 
+ .form{
+     padding-top: 270px;
+     padding-left:200px;
+     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+     font-weight: 100;
+     background-repeat: no-repeat;
+ }
+ 
+ /*ask us ends here*/
+ @media(max-width:767px){
+ header{
+     padding: 20px 50px;
+}
+.navbar-collapse {
+    display: block;
+  text-align: center;
+  background-color: rgba(34, 34, 34, 0.9); }
+  .navbar-collapse .nav-item {
+    padding: 0 !important; 
+    display: block;}
+    .navbar-collapse .nav-item a {
+      display: block;
+      margin-top: 10px;
+      margin-bottom: 10px; }
+.fixed-top .navbar-collapse {
+  background-color: transparent; }
+
+  .musicam{
+      grid-template-columns: 1fr;
+      grid-template-rows: auto;
+      height: auto;
+      grid-gap: 10px;
+  }
+  .form{background-repeat: no-repeat;
+  padding-left:20px;}
+}
+ @media screen and (max-width: 970px) {
+  
+    .navbar-collapse {
+        display: block;
+      text-align: center;
+      background-color: rgba(34, 34, 34, 0.9); }
+      .navbar-collapse .nav-item {
+        padding: 0 !important; 
+        display: block;}
+        .navbar-collapse .nav-item a {
+          display: block;
+          margin-top: 10px;
+          margin-bottom: 10px; }
+    .fixed-top .navbar-collapse {
+      background-color: transparent; }
+      .musicam{
+        width: 100%;
+    }
+    body{
+      background-size: 200%;
+    }
+    .contactus{
+      margin-left: 19%;
+      width:100%;
+      background-size: 200%;
+    }
+    }
+ @media screen and (max-width:900px){
+    .musicam{
+      grid-template-columns: 1fr;
+      grid-template-rows: auto;
+      height: auto;
+      grid-gap: 10px;
+    }
+ }
+
+
+    @media screen and (max-width: 600px){
+        .musicam{
+          grid-template-columns: 1fr;
+          height: auto;
+          width: 100%;
+          margin-top: 200px;
+          
+        }
+        .social{
+          left: 30px;
+          transform: translateX(-30px);
+      }
+      body{
+        background-size: 400%;
+      }
+      .contactus{
+        margin-left: 10%;
+        margin-right: 10%;
+        width:100%;
+        background-size: 100%;
+      }
+      .form{
+        font-size: 0px;
+        width: 100%;
+        margin-right: 200%;
+        margin-left: -140px;
+        padding-left:-50px;
+        padding-right:70px;
+      }
+      i{
+        padding-left:
+        20px;
+        margin-left: 70px;
+        font-size: 2px;
+        font-weight: 2px;
+      }
+    }
